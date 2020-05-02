@@ -13,7 +13,7 @@ SECRET_KEY = 'j2__tvlcicn-^$8+ihm22@4jol%eq2obn5_to4+j$e&o!oyi9c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', '32c0762d72ec4ebeae702467c83a9aa2.vfs.cloud9.us-east-1.amazonaws.com']
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', '32c0762d72ec4ebeae702467c83a9aa2.vfs.cloud9.us-east-1.amazonaws.com', 'localhost']
 
 
 # Application definition
@@ -26,6 +26,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'products',
+    'blog',
+    'cart',
+    'search',
 ]
 
 MIDDLEWARE = [
@@ -43,7 +47,7 @@ ROOT_URLCONF = 'milestone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -51,6 +55,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
+                'cart.contexts.cart_contents'
             ],
         },
     },
@@ -90,8 +96,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.CaseInsensitiveAuth'
-    'blog.backends.CaseInsensitiveAuth'
+    'accounts.backends.EmailAuth'
 ]
 
 
@@ -113,5 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
