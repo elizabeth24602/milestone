@@ -1,18 +1,83 @@
-  
-{% extends 'base.html' %}
-
-{% block content %}
-<body>
-
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am John Doe</h1>
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
-  </div>
+{% extends 'base.html' %} {% block content %}
+<!-- <body> -->
+<div class="row">
+   <div class="col-sm-12">
+      <div class="hero-image">
+         <div class="row-sm-12">
+            <div class="display">
+               <form class="search" action="{% url 'search' %}" method="get">
+                  <input type="text" name="q">
+                  <button type="search">Search</button>
+               </form>
+            </div>
+         </div>
+         <div class="hero-text">
+            <h1 style="font-size: 50px;">I am Josh</h1>
+            <p class="photographer"><br>
+               <br>
+               <br>
+               And I'm a Photographer
+               <br>
+               <br>
+               <br>
+            </p>
+            <button><a href="{% url 'contact' %}">Hire me</a></button>
+            <p class="blank"></p>
+            <p class="blank"></p>
+            <p class="blank"></p>
+         </div>
+      </div>
+   </div>
 </div>
-
-<p>Page Content..</p>
-
-</body>
+<div class="row">
+   <p class="blank">blank</p>
+</div>
+<div class="row">
+   <div class="col-sm-4">
+      <img class="silhouette2" src="static/img/about.jpg" alt="silhouette">
+   </div>
+   <div class="col-sm-8 bio2">
+      <p>Born in Herefordshire, England I was raised and currently live in Ledbury. It is a quaint town with some amazing lanscapes just sitting on your doorstep waiting for a picture to be taken.<br>
+         Taking pictures has been a part of my life for as long as I can remember. As a child, I would routinely shoot portraits of our family dogs.<br>
+         Although creating images has been a constant passion and interest, I spent my college years studying agriculture. I got a job looking after the landscape of the Malvern Hills. I always persured photography on the side, as a hobby more than anything, just messing around with light and shadow.<br>
+         It may appear off topic, but I gained immeasurable insight into what it means to work hard, with passion, vision, intention, and artistry. My work is an obsession, so every day and every shoot is an opportunity to learn and to further develop my craft - discovering more about myself, and my fellow earthlings.<br>
+         I primarily shoot digital, but I have a love for analog and darkroom work as well. I strive to create photographs that not only capture a moment, but also capture a feeling and essence.
+         I'd love to hear from you, so feel free to contact me.<br>
+         Thank you for taking time to look at my site and work; I hope to meet you in the near future.
+      </p>
+   </div>
+</div>
+<div class="row">
+   <p class="blank">blank</p>
+</div>
+<div class="row">
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/josh.jpg" alt="summit" style="width:100%">
+         <button class="btn"><a href="{% url 'about' %}">About</a></button>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/van.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'products' %}">Gallery</a></button>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/contactus.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'contact' %}">Contact</a></button>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <p class="blank">blank</p>
+</div>
+<div class="row">
+   <div class="col-sm-12 border">
+      <h3 class="subscribe">Subscribe Now!</h3>
+      <p class="bio">By subscribing you will recieve 10% off all purchases, acess to my blog and be the first to be notified when I post and you will have acess to my favourite products and a discount on each when shopping through my affiliate code.... <button class="btn"><a href="{% url 'register' %}">Subscribe</a></button></p>
+   </div>
+</div>
+<!-- </body> -->
 {% endblock %}

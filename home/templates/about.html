@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row-sm-12">
+   <div class="display">
+      <form class="search" action="{% url 'search' %}" method="get">
+         <input type="text" name="q">
+         <button type="search">Search</button>
+      </form>
+   </div>
+</div>
+<div class="row no-gutters">
+   <div class="col headings">
+      <h3 class="name">About Me</h3>
+   </div>
+</div>
+<div class="row">
+   <div class="col-sm-4">
+      <img class="silhouette" src="static/img/mist.jpg" alt="silhouette">
+   </div>
+   <div class="col-sm-8 bio">
+      <p>Born in Herefordshire, England I was raised and currently live in Ledbury. It is a quaint town with some amazing lanscapes just sitting on your doorstep waiting for a picture to be taken.<br>
+         Taking pictures has been a part of my life for as long as I can remember. As a child, I would routinely shoot portraits of our family dogs.<br>
+         Although creating images has been a constant passion and interest, I spent my college years studying agriculture. I got a job looking after the landscape of the Malvern Hills. I always persured photography on the side, as a hobby more than anything, just messing around with light and shadow.<br>
+         It may appear off topic, but I gained immeasurable insight into what it means to work hard, with passion, vision, intention, and artistry. My work is an obsession, so every day and every shoot is an opportunity to learn and to further develop my craft - discovering more about myself, and my fellow earthlings.<br>
+         I primarily shoot digital, but I have a love for analog and darkroom work as well. I strive to create photographs that not only capture a moment, but also capture a feeling and essence.
+         I'd love to hear from you, so feel free to contact me.<br>
+         Thank you for taking time to look at my site and work; I hope to meet you in the near future.
+      </p>
+      <div id="map"></div>
+   </div>
+</div>
+<div class="row">
+   <p class="blank">blank</p>
+</div>
+<div class="row">
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/orange.jpg" alt="summit" style="width:100%">
+         <button class="btn"><a href="{% url 'home' %}">Home</a></button>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/van.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'products' %}">Gallery</a></button>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/contactus.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'contact' %}">Contact</a></button>
+      </div>
+   </div>
+</div>
+{% endblock %}

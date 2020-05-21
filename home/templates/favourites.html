@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row-sm-12">
+   <div class="display">
+      <form class="search" action="{% url 'search' %}" method="get">
+         <input type="text" name="q">
+         <button type="search">Search</button>
+      </form>
+   </div>
+</div>
+<div class="row no-gutters">
+   <div class="col headings">
+      <h3 class="name">My Favourites</h3>
+   </div>
+</div>
+
+   <div class="row">
+      <p class="blank">blank</p>
+   </div>
+
+<div class="row">
+   <div class="col-md-6">
+      <h4>Nikon Z6</h4>
+      <div class="container">
+      <img src="static/img/z6.jpg" class="picture-choices">
+      </div>
+      <p class="choices">Now just over a year old, the Z6 still retains its position as our best camera. 
+        Being a fantastic all rounder with superb handling, there's nothing yet which beats it in terms of versatility, usability and affordability. 
+         <span id="cameradots">...</span><span id="cameramore">The Z6 combines both excellent stills and 4K video quality with everything else that's key for a full-frame mirrorless camera. 
+         That means we get a lightweight and compact body that still manages to handle beautifully on account of a substantial and ergonomically designed grip. 
+         There's also a sharp and crisp 3.69-million dot viewfinder along with a responsive, and tilting touchscreen. 
+         The native lens range for the Z mount is expanding rapidly, but if there's something you need that's not covered then you can use F-mount optics via the optional FTZ adapter ($245 / £270 / AU$180). 
+         We've also been treated to features such as Eye AF for the past few months, which helps it to compete even more strongly against Sony's Alpha line. 
+         We love the Z6 – though the Sony A7 III isn't too far behind it.<br>
+         <a class="col-md-6 buy" href="https://www.johnlewis.com/nikon-z6-compact-system-camera-4k-uhd-24-5mp-wi-fi-bluetooth-oled-evf-3-2-tiltable-touch-screen-ftz-mount-adapter-body-only/p4041347?sku=238037815&s_afcid=af_103504&tmad=c&awc=1203_1589891906_2a46fab66b7df00781a0e4169fdbaa0c&tmcampid=48">Buy Now</a>
+         </span>
+         <button onclick="myFunction('cameradots', 'cameramore', 'cameraBtn')" id="cameraBtn">Read more</button>
+      </p>
+   </div>
+      <div class="col-md-6">
+      <h4>Sigma 18-35 f/1.8 DC HSM Art Lens</h4>
+      <div class="container">
+      <img src="static/img/sigma.jpg" class="picture-choices">
+      </div>
+      <p class="choices">The Sigma 18-35 f/1.8 is one of the most popular lenses due to its ability to keep an f/1.8 aperture regardless of the focal length you are using. Most lenses start closing aperture the further you zoom in
+         <span id="sigmadots">...</span><span id="sigmamore">Sigma’s beloved lens is available for Canon, Nikon, Pentax, Sony, and Sigma mounts. 
+         The price is also unheard of for a lens of this kind — check it out via the button below.
+         What’s the catch? The Sigma 18-35 f/1.8 lens has one major flaw — it is made for APS-C sensors. Full frame users are out of luck!<br>
+         <a class="col-md-6 buy" href="https://www.amazon.co.uk/dp/B00DBL0NLQ?tag=aagbp-21">Buy Now</a>
+         </span>
+         <button onclick="myFunction('sigmadots', 'sigmamore', 'sigmaBtn')" id="sigmaBtn">Read more</button>
+      </p>
+       <h4>Adobe Photoshop CC 2020</h4>
+      <div class="container">
+      <img src="static/img/adobe.jpg" class="picture-choices">
+      </div>
+      <p class="choices">Adobe’s decision to make Photoshop CC a subscription-only product remains controversial. 
+        Nevertheless, Photoshop is slick, powerful and constantly improving. Its support for selections, masks and layers is unmatched, making it the tool of choice for complex composite images.
+         <span id="adobedots">...</span><span id="adobemore">Despite its reputation for complexity, Photoshop actually offers a very clean, slick interface. 
+         There are no ‘novice’ modes, but the tools panel does offer fly-out animations that show you how the tools work and what they do. 
+         There are no image browsing or cataloguing tools in Photoshop itself, but since Lightroom is included in the same Photography Plans as Photoshop, that’s not an issue. 
+         On its own, Photoshop is powerful but limited; with Adobe Lightroom it’s half of the world's most popular image editing double-act.<br>
+         <a class="col-md-6 buy" href="https://www.adobe.com/uk/creativecloud/photography/compare-plans.html?red=a">Buy Now</a>
+         </span>
+         <button onclick="myFunction('adobedots', 'adobemore', 'adobeBtn')" id="adobeBtn">Read more</button>
+      </p>
+   </div>
+</div>
+
+   <div class="row">
+   <div class="col-md-4">
+   <h4>Favourite Location</h4>
+      <div class="container">
+      <img src="static/img/mountains.jpg" class="picture-choices">
+      </div>
+   </div>
+   <div class="col-md-8">
+      <p class="blank">blank</p>
+<button class="accordion">The Lake District</button>
+<div class="panel">
+  <p>Lake District National Park covers more than 2,000 square km (more than 1,400 square miles), which is the majority of the Lake District. 
+  It is also the most popular national park in the United Kingdom, and also the largest in England.
+  Some of the highlights of the park include Great Gable, Aira Force, Derwent Water, Haystacks, Striding Edge, Helvellyn, Blea Tarn, Friars Crag, Ullswater, Haweswater, Catbells, Ashness Bridge, Lake Windermere, and Skiddaw.
+</p>
+      <div class="container">
+      <img src="static/img/lake.jpg" class="picture-choices">
+      </div>
+</div>
+
+<p class="blank">blank</p>
+
+<button class="accordion">Peak District National Park</button>
+<div class="panel">
+  <p>Peak District National Park was the first national park in the UK. 
+  It is located close to the cities of Manchester, Sheffield, and Derby, at the southern end of the Pennines (a range of mountains and hills). 
+  The landscape mostly consists of rounded hills and valleys rather than sharp or prominent peaks. 
+  Most of the population and farmland is found in the southern portion of the park.
+  There are a few main roads within the park, including A57 (Snake Road) between Manchester and Sheffield. 
+  Traffic and parking can be an issue during the busy summer months. Public transportation is available.
+</p>
+      <div class="container">
+      <img src="static/img/peak.jpg" class="picture-choices">
+      </div>
+</div>
+
+<p class="blank">blank</p>
+
+<button class="accordion">Dartmoor National Park</button>
+<div class="panel">
+  <p>Dartmoor National Park is in southwest England, west of the Jurassic Coast. 
+  Dartmoor is known for its tors, which are hills with rock outcroppings. 
+  Over half of the land in this national park is privately owned, but public access is allowed on much of this land. 
+  Visitor’s centers are located in Princetown, Haytor, and Postbridge. Hiking is a popular activity here.
+</p>
+      <div class="container">
+      <img src="static/img/dartmoor.jpg" class="picture-choices">
+      </div>
+</div>
+   </div>
+   </div>
+
+      <div class="row">
+      <p class="blank">blank</p>
+   </div>
+
+   <div class="row">
+    <div class="col-sm-3">
+      <div class="container">
+         <img src="static/img/orange.jpg" alt="summit" style="width:100%">
+         <button class="btn"><a href="{% url 'home' %}">Home</a></button>
+      </div>
+   </div>
+   <div class="col-sm-3">
+      <div class="container">
+         <img src="static/img/josh.jpg" alt="summit" style="width:100%">
+         <button class="btn"><a href="{% url 'about' %}">About</a></button>
+      </div>
+   </div>
+   <div class="col-sm-3">
+      <div class="container">
+         <img src="static/img/van.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'products' %}">Gallery</a></button>
+      </div>
+   </div>
+   <div class="col-sm-3">
+      <div class="container">
+         <img src="static/img/contactus.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'contact' %}">Contact</a></button>
+      </div>
+   </div>
+</div>
+
+{% endblock %}

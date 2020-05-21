@@ -1,10 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="col-sm-12">
-<div class="row">
-<h2>Gallery</h2>
+<div class="row-sm-12">
+   <div class="display">
+      <form class="search" action="{% url 'search' %}" method="get">
+         <input type="text" name="q">
+         <button type="search">Search</button>
+      </form>
+   </div>
 </div>
+<div class="row no-gutters">
+   <div class="col headings">
+      <h3 class="name">Gallery</h3>
+      <p class="subscribe">Please contact me for bespoke orders and I will do all I can to accomidate</p>
+   </div>
 </div>
 <div class="row row-flex">
     {% for product in products %}
@@ -13,8 +22,8 @@
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
                 <h3>{{ product.name }}</h3>
-                <p class="product-description">{{ product.description }}</p>
-                <p>{{ product.price }}</p>
+                <p class="product-description subscribe">{{ product.description }}</p>
+                <p class="subscribe">{{ product.price }}</p>
 
                 <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}
@@ -28,5 +37,30 @@
             </div>
         </div>
     {% endfor %}
+    </div>
+
+   <div class="row">
+      <p class="blank">blank</p>
+   </div>
+
+<div class="row">
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/josh.jpg" alt="summit" style="width:100%">
+         <button class="btn"><a href="{% url 'about' %}">About</a></button>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/orange.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'home' %}">Home</a></button>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="container">
+         <img src="static/img/contactus.jpg" alt="Snow" style="width:100%">
+         <button class="btn"><a href="{% url 'contact' %}">Contact</a></button>
+      </div>
+   </div>
 </div>
 {% endblock %}
