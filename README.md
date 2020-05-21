@@ -1,5 +1,5 @@
-####Full Stack Frameworks with Django Milestone Project
-#Photography Website
+#### Full Stack Frameworks with Django Milestone Project
+# Photography Website
 
 *External user’s goal:*
 *Users are able to purchase photographs to address their needs*
@@ -180,7 +180,8 @@ The Favourites page features the most JavaScript. Firstly there are 3 read more 
 5.	Run app.py
 
 ###Deployment
-This project was developed using the Cloud9 IDE, committed to git and pushed to GitHub using the built in function within cloud9. To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+####GitHub
+This project was developed using the GitPod IDE, committed to git and pushed to GitHub. To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 1.	Log into GitHub.
 2.	From the list of repositories on the screen, select elizabeth24602/the-swallows.
 3.	From the menu items near the top of the page, select Settings.
@@ -188,6 +189,15 @@ This project was developed using the Cloud9 IDE, committed to git and pushed to 
 5.	Under Source click the drop-down menu labelled None and select Master Branch
 6.	On selecting Master Branch the page is automatically refreshed, the website is now deployed.
 7.	Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+
+####Heroku
+To deploy your app to Heroku, you typically use the git push command to push the code from your local repository’s master branch to your heroku remote, like so:
+git push heroku master
+Initializing repository, done.
+updating 'refs/heads/master'
+...
+Use this same command whenever you want to deploy the latest committed version of your code to Heroku.
+Note that Heroku only deploys code that you push to the master branch of the heroku remote. Pushing code to another branch of the remote has no effect.
 
 ###Credits
 ####Content
