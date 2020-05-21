@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/elizabeth24602/milestone.svg?branch=master)](https://travis-ci.org/elizabeth24602/milestone)
+
 #### Full Stack Frameworks with Django Milestone Project
 # Photography Website
 
@@ -212,6 +214,7 @@ Note that Heroku only deploys code that you push to the master branch of the her
 * Python
 #### Acknowledgements
 * I received inspiration for this project from my own experience of building and maintaining a WordPress Blog for personal use in the past years.
+
 
 
 
