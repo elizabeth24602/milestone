@@ -30,7 +30,6 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'products',
-    'blog',
     'cart',
     'search',
     'checkout',

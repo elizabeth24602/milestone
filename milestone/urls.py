@@ -4,7 +4,6 @@ from accounts import urls as urls_accounts
 from products import urls as urls_products
 # Made these accessible and tied them up
 from home.views import home, about, gallery, contact, favourites
-from blog.views import blog
 from cart import urls as urls_cart
 from checkout import urls as urls_checkout
 from search.views import do_search
@@ -27,7 +26,6 @@ urlpatterns = [
     path('contact', contact, name='contact'),
     path('search/', do_search, name='search'),
     path('favourites', favourites, name='favourites'),
-    path('blog', blog, name='blog'),
 
     # additional APP urls
     path('accounts/', include(urls_accounts)),
