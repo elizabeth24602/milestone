@@ -1,5 +1,5 @@
-{% load static %}
 {% extends 'base.html' %} 
+{% load static %}
 {% block content %}
 <!-- <body> -->
 <div class="row">
@@ -55,19 +55,19 @@
 <div class="row">
    <div class="col-sm-4">
       <div class="container">
-         <img src="static/img/josh.jpg" alt="summit" style="width:100%">
+         <img src="{% static "img/josh.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'about' %}">About</a></button>
       </div>
    </div>
    <div class="col-sm-4">
       <div class="container">
-         <img src="static/img/van.jpg" alt="Snow" style="width:100%">
+         <img src="{% static "img/van.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'products' %}">Gallery</a></button>
       </div>
    </div>
    <div class="col-sm-4">
       <div class="container">
-         <img src="static/img/contactus.jpg" alt="Snow" style="width:100%">
+         <img src="{% static "img/contactus.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'contact' %}">Contact</a></button>
       </div>
    </div>
