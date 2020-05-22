@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <div class="row-sm-12">
    <div class="display">
@@ -22,7 +23,7 @@
    <div class="col-md-6">
       <h4>Nikon Z6</h4>
       <div class="container">
-      <img src="static/img/z6.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/z6.jpg" %}" alt="My image">
       </div>
       <p class="choices">Now just over a year old, the Z6 still retains its position as our best camera. 
         Being a fantastic all rounder with superb handling, there's nothing yet which beats it in terms of versatility, usability and affordability. 
@@ -40,7 +41,7 @@
       <div class="col-md-6">
       <h4>Sigma 18-35 f/1.8 DC HSM Art Lens</h4>
       <div class="container">
-      <img src="static/img/sigma.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/sigma.jpg" %}" alt="My image">
       </div>
       <p class="choices">The Sigma 18-35 f/1.8 is one of the most popular lenses due to its ability to keep an f/1.8 aperture regardless of the focal length you are using. Most lenses start closing aperture the further you zoom in
          <span id="sigmadots">...</span><span id="sigmamore">Sigma’s beloved lens is available for Canon, Nikon, Pentax, Sony, and Sigma mounts. 
@@ -52,7 +53,7 @@
       </p>
        <h4>Adobe Photoshop CC 2020</h4>
       <div class="container">
-      <img src="static/img/adobe.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/adobe.jpg" %}" alt="My image">
       </div>
       <p class="choices">Adobe’s decision to make Photoshop CC a subscription-only product remains controversial. 
         Nevertheless, Photoshop is slick, powerful and constantly improving. Its support for selections, masks and layers is unmatched, making it the tool of choice for complex composite images.
@@ -71,7 +72,7 @@
    <div class="col-md-4">
    <h4>Favourite Location</h4>
       <div class="container">
-      <img src="static/img/mountains.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/mountains.jpg" %}" alt="My image">
       </div>
    </div>
    <div class="col-md-8">
@@ -83,7 +84,7 @@
   Some of the highlights of the park include Great Gable, Aira Force, Derwent Water, Haystacks, Striding Edge, Helvellyn, Blea Tarn, Friars Crag, Ullswater, Haweswater, Catbells, Ashness Bridge, Lake Windermere, and Skiddaw.
 </p>
       <div class="container">
-      <img src="static/img/lake.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/lake.jpg" %}" alt="My image">
       </div>
 </div>
 
@@ -99,7 +100,7 @@
   Traffic and parking can be an issue during the busy summer months. Public transportation is available.
 </p>
       <div class="container">
-      <img src="static/img/peak.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/peak.jpg" %}" alt="My image">
       </div>
 </div>
 
@@ -113,7 +114,7 @@
   Visitor’s centers are located in Princetown, Haytor, and Postbridge. Hiking is a popular activity here.
 </p>
       <div class="container">
-      <img src="static/img/dartmoor.jpg" class="picture-choices">
+      <img class="picture-choices" src="{% static "img/dartmoor.jpg" %}" alt="My image">
       </div>
 </div>
    </div>
@@ -126,25 +127,25 @@
    <div class="row">
     <div class="col-sm-3">
       <div class="container">
-         <img src="static/img/orange.jpg" alt="summit" style="width:100%">
+         <img src="{% static "img/orange.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'home' %}">Home</a></button>
       </div>
    </div>
    <div class="col-sm-3">
       <div class="container">
-         <img src="static/img/josh.jpg" alt="summit" style="width:100%">
+         <img src="{% static "img/josh.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'about' %}">About</a></button>
       </div>
    </div>
    <div class="col-sm-3">
       <div class="container">
-         <img src="static/img/van.jpg" alt="Snow" style="width:100%">
+         <img src="{% static "img/van.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'products' %}">Gallery</a></button>
       </div>
    </div>
    <div class="col-sm-3">
       <div class="container">
-         <img src="static/img/contactus.jpg" alt="Snow" style="width:100%">
+         <img src="{% static "img/contactus.jpg" %}" alt="My image" style="width:100%">
          <button class="btn"><a href="{% url 'contact' %}">Contact</a></button>
       </div>
    </div>
