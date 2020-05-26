@@ -16,6 +16,60 @@
       <p class="subscribe">Please contact me for bespoke orders and I will do all I can to accomidate</p>
    </div>
 </div>
+
+<div class="row">
+  <div class="col-md-4">
+     <img src="{% static "img/dartmoor.jpg" %}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="col-md-4">
+     <img src="{% static "img/lake.jpg" %}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="col-md-4">
+     <img src="{% static "img/peak.jpg" %}" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+     <img src="{% static "img/dartmoor.jpg" %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="{% static "img/lake.jpg" %}" style="width:100%">
+    </div>
+
+    
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="{% static "img/peak.jpg" %}" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+    <img class="demo cursor" src="{% static "img/dartmoor.jpg" %}" style="width:100%" onclick="currentSlide(1)" alt="Dartmoor">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static "img/lake.jpg" %}" style="width:100%" onclick="currentSlide(2)" alt="Lake">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static "img/pek.jpg" %}" style="width:100%" onclick="currentSlide(3)" alt="Peak">
+    </div>
+  </div>
+</div>
+
+
 <div class="row row-flex">
     {% for product in products %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
