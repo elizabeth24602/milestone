@@ -121,6 +121,13 @@ footer {
   background-size: cover;
   position: relative;
   margin-bottom: 20px;
+  padding: 0px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    padding: 0px;
 }
 
 
