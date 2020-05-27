@@ -76,23 +76,39 @@
       </div>
    </div>
    <div class="col-md-8">
-      <p class="blank">blank</p>
-<button class="accordion">The Lake District</button>
-<div class="panel">
-  <p>Lake District National Park covers more than 2,000 square km (more than 1,400 square miles), which is the majority of the Lake District. 
+   <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          The Lake District
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+          <p>Lake District National Park covers more than 2,000 square km (more than 1,400 square miles), which is the majority of the Lake District. 
   It is also the most popular national park in the United Kingdom, and also the largest in England.
   Some of the highlights of the park include Great Gable, Aira Force, Derwent Water, Haystacks, Striding Edge, Helvellyn, Blea Tarn, Friars Crag, Ullswater, Haweswater, Catbells, Ashness Bridge, Lake Windermere, and Skiddaw.
 </p>
       <div class="container">
       <img class="picture-choices" src="{% static "img/lake.jpg" %}" alt="My image">
       </div>
-</div>
-
-<p class="blank">blank</p>
-
-<button class="accordion">Peak District National Park</button>
-<div class="panel">
-  <p>Peak District National Park was the first national park in the UK. 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          The Peak District
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <p>Peak District National Park was the first national park in the UK. 
   It is located close to the cities of Manchester, Sheffield, and Derby, at the southern end of the Pennines (a range of mountains and hills). 
   The landscape mostly consists of rounded hills and valleys rather than sharp or prominent peaks. 
   Most of the population and farmland is found in the southern portion of the park.
@@ -102,13 +118,20 @@
       <div class="container">
       <img class="picture-choices" src="{% static "img/peak.jpg" %}" alt="My image">
       </div>
-</div>
-
-<p class="blank">blank</p>
-
-<button class="accordion">Dartmoor National Park</button>
-<div class="panel">
-  <p>Dartmoor National Park is in southwest England, west of the Jurassic Coast. 
+       </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Dartmoor National Park
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       <p>Dartmoor National Park is in southwest England, west of the Jurassic Coast. 
   Dartmoor is known for its tors, which are hills with rock outcroppings. 
   Over half of the land in this national park is privately owned, but public access is allowed on much of this land. 
   Visitor’s centers are located in Princetown, Haytor, and Postbridge. Hiking is a popular activity here.
@@ -116,6 +139,9 @@
       <div class="container">
       <img class="picture-choices" src="{% static "img/dartmoor.jpg" %}" alt="My image">
       </div>
+       </div>
+    </div>
+  </div>
 </div>
    </div>
    </div>

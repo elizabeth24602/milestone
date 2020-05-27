@@ -479,7 +479,6 @@ body {font-family: Verdana, sans-serif;}
 
 /*-------------------------------accordion */
 .accordion {
-  background-color: #7eaaa5;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -622,7 +621,7 @@ a.next {
 
 .caption-container {
   text-align: center;
-  font-family: "Beth+Ellen";
+  font-family: "Playfair Display";
   padding: 2px 16px;
   color: #808080;
 }

@@ -3,10 +3,12 @@
 #### Full Stack Frameworks with Django Milestone Project
 # Photography Website
 
-*External user’s goal:*
-*Users are able to purchase photographs to address their needs*
-*Site owner's goal:*
-*Earn money for doing and selling freelance photography*
+* *External user’s goal:*
+    * *Users are able to purchase photographs to address their needs*
+* *Site owner's goal:*
+    * *Earn money for doing and selling freelance photography*
+
+    https://loader-media.herokuapp.com/
 
 ## Loader Media
 
@@ -178,20 +180,11 @@ The Favourites page features the most JavaScript. Firstly there are 3 read more 
     1. Try to submit the empty form and verify that an error message about the required fields appears
     2. Try to submit the form with an invalid email address and verify that a relevant error message appears
     3. Try to submit the form with all inputs valid and verify that a success message appears.
-4.	Click “Edit” “Read” “Watched” and “Add a Book” to make sure they link to the correct pages.
-5.	Run app.py
+4.	Click “Home” “About” “Gallery” and “contact” to make sure they link to the correct pages.
+5.	Try "login/logout", "cart", "checkout"
+6.  Try affiliate links on read more buttons.
 
 ### Deployment
-#### GitHub
-This project was developed using the GitPod IDE, committed to git and pushed to GitHub. To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
-1.	Log into GitHub.
-2.	From the list of repositories on the screen, select elizabeth24602/the-swallows.
-3.	From the menu items near the top of the page, select Settings.
-4.	Scroll down to the GitHub Pages section.
-5.	Under Source click the drop-down menu labelled None and select Master Branch
-6.	On selecting Master Branch the page is automatically refreshed, the website is now deployed.
-7.	Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
-
 #### Heroku
 To deploy your app to Heroku, you typically use the git push command to push the code from your local repository’s master branch to your heroku remote, like so:
 git push heroku master
