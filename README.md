@@ -18,9 +18,9 @@ My fourth and final milestone project is a photography ecommerce site entitled P
 
 #### External user’s goal:
 Users are able to purchase graphical designs to address their needs
-Site owner's goal:
-Earn money for doing freelance design work
-Potential features to include:
+##### Site owner's goal:
+* Earn money for doing freelance design work
+##### Potential features to include:
 Showcase prior work for clients, based on different kinds of requests, and the customer's testimonials.
 Allow users to order a particular graphic to suit their goals. The user would fill out a form describing their needs, including fields such as type (e.g. icon, logo, poster), size and description, get an automatic quote and then pay. You may want to include a javascript calculator to display a preview of the quote, but make sure that the final price is determined on the server, and cannot be manipulated directly by the user.
 The site owner, logging in as a special user, would be able to see a list of all orders, and then upload their completed work which would be made available to the customer.
@@ -182,7 +182,7 @@ The Favourites page features the most JavaScript. Firstly there are 3 read more 
     3. Try to submit the form with all inputs valid and verify that a success message appears.
 4.	Click “Home” “About” “Gallery” and “contact” to make sure they link to the correct pages.
 5.	Try "login/logout", "cart", "checkout"
-6.  Try affiliate links on read more buttons.
+6.  Try affiliate links on read more buttons, try Accordion layout.
 
 ### Deployment
 #### Heroku
